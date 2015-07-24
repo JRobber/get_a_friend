@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Find a Friend</title>
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div ng-controller="mainCtrl">
+      <!-- Single button -->
+  <div class="container">
+    <div class="jumbotron jumboSetting">
+      <h1 align="center">{{intro}}</h1>
+      <h4 align="center">{{well}}</h4>
+      <h3 align="center">{{yourFriend}}</h3>
+      <h1 align="center">{{newData.FullName}}</h1>
+        <p align="center"><img class="imgBorder img-responsive" ng-src="{{newData.newImage}}"/></p>
+        <p align="center"><a class="btn btn-primary btn-lg removeGetButton" ng-click="receiveData(); introDisappear()" href="#" role="button">Get a Friend!</a></p>
+    </div>
+    <div class="container" ng-controller="catCtrl">
+      <img ng-src="{{catImg}}"/>
+    </div>
+  </div>
+  <!--  -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-resource.js"></script>
+    <script src="app.js"></script>
+    <script src="mainCtrl.js"></script>
+    <script src="catCtrl.js"></script>
+    <script src="mainSrvc.js"></script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+.imgBorder {
+  border: 5px solid rgba(0, 0, 0, 0.2);
+  display: none;
+  height: 410px;
+  width: 410px;
+}
+
+.jumboSetting {
+  padding: 2% 0 2% 0;
+  margin: 3% 10% 3% 10%;
+}
